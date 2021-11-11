@@ -1,0 +1,41 @@
+import React from 'react';
+import {View, StyleSheet, Text, Image, Dimensions} from 'react-native';
+
+export const LandingScreen = () => {
+    return(
+        <View style={ styles.container }>
+            <View style={ styles.navigation}>
+                <Text>
+                    Navigation
+                </Text>
+            </View>
+            <View style={ styles.body }>
+                <Text>Body</Text>
+            </View>
+            <View style={ styles.footer }>
+                <Text>Body</Text>
+            </View>
+        </View>
+    )
+}
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: 'rgba(242,242,242, 1)'
+    },
+
+    navigation: {
+        flex: 2,
+        backgroundColor: 'red'
+    },
+    body: {
+        flex: 9,
+        justifyContent: 'center',
+        backgroundColor: 'yellow'
+    },
+    footer: {
+        flex: 1,
+        backgroundColor: 'blue'
+    }
+})
